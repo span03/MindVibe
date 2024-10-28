@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindVibe - Your Mental Health Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="l2.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="container">
+            <!-- Logo Image and Text -->
+            <div class="logo-container">
+                <img src="l2.png" alt="MindVibe Logo" class="logo-img">
+                <h1 class="logo-text">MindVibe</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#personalized-paths">Personalized Paths</a></li>
+                    <li><a href="#happiness-workshops">Happiness Workshops</a></li>
+                    <li><a href="#ai-support">AI-Powered Support</a></li>
+                    <li><a href="#problem-solving">Problem-Solving Strategies</a></li>
+                    <li><a href="#community">Community Engagement</a></li>
+                    <li><a href="#therapy">Virtual Therapy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Your Journey to Happiness Starts Here</h2>
+            <p>MindVibe is your companion for mental well-being, providing resources tailored to your needs.</p>
+            <a href="#personalized-paths" class="hero-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Feature Sections -->
+    <main>
+        <!-- Personalized Learning Paths Section -->
+        <section id="personalized-paths" class="feature-section">
+            <div class="container">
+                <h2>Personalized Learning Paths</h2>
+                <p>Start with an assessment to create a personalized mental wellness plan based on your needs and happiness goals.</p>
+                <form id="assessmentForm">
+                    <label>Current Mood Level:</label>
+                    <input type="range" min="1" max="10" id="moodLevel" name="moodLevel" required>
+                    <button type="button" onclick="submitAssessment()">Submit Assessment</button>
+                </form>
+                <p id="assessmentResult"></p>
+            </div>
+        </section>
+
+        <!-- Happiness Workshops Section -->
+        <section id="happiness-workshops" class="feature-section">
+            <div class="container">
+                <h2>Happiness Workshops</h2>
+                <p>Participate in workshops designed to teach gratitude, joy, and positivity in your daily life.</p>
+                <button onclick="joinWorkshop('gratitude')">Gratitude Workshop</button>
+                <button onclick="joinWorkshop('positivity')">Positivity Workshop</button>
+                <p id="workshopResult"></p>
+            </div>
+        </section>
+
+        <!-- AI-Powered Support Section -->
+        <section id="ai-support" class="feature-section">
+            <div class="container">
+                <h2>AI-Powered Support</h2>
+                <p>Get 24/7 assistance through our AI-powered chatbot, tailored to address your challenges.</p>
+                <button onclick="aiSupport('stress')">Stress Management</button>
+                <button onclick="aiSupport('anxiety')">Anxiety Relief</button>
+                <button onclick="aiSupport('motivation')">Motivation Boost</button>
+                <p id="aiSupportResult"></p>
+            </div>
+        </section>
+
+        <!-- Problem-Solving Strategies Section -->
+        <section id="problem-solving" class="feature-section">
+            <div class="container">
+                <h2>Effective Problem-Solving Strategies</h2>
+                <p>Gain resilience and adaptability with tools for managing life’s challenges.</p>
+                <button onclick="problemSolving('resilience')">Resilience Techniques</button>
+                <button onclick="problemSolving('adaptability')">Adaptability Skills</button>
+                <p id="problemSolvingResult"></p>
+            </div>
+        </section>
+
+        <!-- Community Engagement Section -->
+        <section id="community" class="feature-section">
+            <div class="container">
+                <h2>Community Engagement</h2>
+                <p>Join our community to share experiences and find support in a safe, moderated space.</p>
+                <button onclick="joinCommunity()">Join Community</button>
+                <p id="communityResult"></p>
+            </div>
+        </section>
+
+        <!-- Virtual Therapy and Counseling Section -->
+        <section id="therapy" class="feature-section">
+            <div class="container">
+                <h2>Virtual Therapy and Counseling</h2>
+                <p>Connect with certified professionals for personalized, guided support.</p>
+                <button onclick="startTherapy()">Start Therapy Session</button>
+                <p id="therapyResult"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MindVibe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
